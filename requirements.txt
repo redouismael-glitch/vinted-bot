@@ -1,5 +1,0 @@
-requests
-google-genai
-python-telegram-bot==20.7
-schedule
-beautifulsoup4
