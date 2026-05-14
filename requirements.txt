@@ -1,4 +1,0 @@
-requests
-python-telegram-bot==21.9
-schedule
- 
