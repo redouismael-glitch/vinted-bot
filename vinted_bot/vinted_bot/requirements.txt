@@ -1,0 +1,3 @@
+httpx==0.27.0
+python-telegram-bot==21.9
+schedule
