@@ -9,7 +9,6 @@ from urllib.parse import urlparse, parse_qs
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes, MessageHandler, filters
 
-══════════════════════════════════════════════════════════════════════════════
 CONFIG
 ══════════════════════════════════════════════════════════════════════════════
 TELEGRAM_TOKEN   = os.getenv("TELEGRAM_TOKEN", "")
