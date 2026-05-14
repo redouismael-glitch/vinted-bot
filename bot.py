@@ -408,10 +408,14 @@ async def handle_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     elif data == "panel_pause":
         config["actif"] = False
 
-    elif data == "panel_stop":
-        config["actif"] = False
-        await query.edit_message_text("⛔ Bot arrêté. Railway va le redémarrer automatiquement.")
-        sys.exit(0)
+  elif data == "panel_stop":
+    config["actif"] = False
+
+    await query.edit_message_text(
+        "⛔ Bot arrêté proprement."
+    )
+
+    await ctx.application.stop()
 
     elif data == "panel_refresh":
         pass  # juste rafraîchir l'affichage
